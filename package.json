@@ -1,7 +1,7 @@
 {
-  "name": "vcf",
+  "name": "vcf-auditores",
   "version": "1.0.0",
-  "description": "vcf",
+  "description": "vcf-auditores",
   "main": "webpack.config.js",
   "dependencies": {
     "jquery-background-video": "^1.0.0"
