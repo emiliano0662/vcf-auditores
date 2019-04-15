@@ -1,0 +1,16 @@
+.section_landing_feature_items {
+    padding: 60px 0px 0px 0px;
+    background: transparent url('../img/bg-landing-feature-items.png') center center / cover no-repeat;
+
+    h2 {
+        margin: 0px 0px 30px 0px;
+        line-height: 80px;
+        font-weight: 700;
+        font-size: 20px;
+        color: #Fff;
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+}

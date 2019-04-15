@@ -1,0 +1,23 @@
+.section_home_banner {
+    padding: 120px 0px 70px 0px;
+    background: transparent;
+    
+    .d-flex {
+        min-height: 600px;
+
+        .img-fluid {
+            width: 100%;
+            max-width: 475px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+
+    .section_home_banner {
+
+        .d-flex {
+            min-height: 200px;
+        }
+    }
+}

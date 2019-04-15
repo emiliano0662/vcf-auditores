@@ -1,0 +1,94 @@
+.section_landing_available_info {
+    padding: 60px 0px 50px 0px;
+    background-color: #bd0a13;
+
+    .container {
+        max-width: 960px;
+   
+        h2 {
+            margin: 0px 0px 30px 0px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 60px;
+            color: #fff;
+        }
+    
+        p {
+            margin: 0px 0px 60px 0px;
+            line-height: 25px;
+            font-size: 20px;
+            color: #fff;
+        }
+    
+        .content-btn {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+    
+            .btn {
+                width: 180px;
+                padding: 12px 0px;
+                margin-bottom: 30px;
+                border: 3px solid #fff;
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+                border-radius: 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                
+                .fa {
+                    margin-right: 15px;
+                    font-size: 30px;
+                }
+    
+                &.btn-primary {
+                    color: #fff;
+                    background-color: transparent;
+    
+                    .fa {
+                        color: #fff;
+                    }
+                }
+                
+                &.btn-secondary {
+                    color: #bd0a13;
+                    background-color: #fff;
+    
+                    .fa {
+                        color: #bd0a13;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .section_landing_available_info {
+        padding: 40px 0px 0px 0px;
+
+        .container {
+
+            h2 {
+                margin: 0px 0px 20px 0px;
+                font-size: 50px;
+            }
+            
+            p {
+                margin: 0px 0px 40px 0px;
+            }
+            
+            .content-btn {
+                margin-bottom: 20px;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}

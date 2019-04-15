@@ -1,0 +1,96 @@
+.section_landing_our_app {
+    padding: 60px 0px 130px 0px;
+    background-color: #fff;
+
+    h2 {
+        margin: 0px 0px 100px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 80px;
+        font-weight: 400;
+        font-size: 60px;
+        color: #bd0a13;
+    }
+    .content-img {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 30px;
+        background-color: transparent;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        h3 {
+            width: 100%;
+            margin: 0px;
+            padding: 20px 15px;
+            text-transform: uppercase;
+            line-height: 20px;
+            font-weight: 700;
+            font-size: 20px;
+            color: #fff;
+            background: transparent url('../img/bg-red-opacity-70.png') left top repeat;
+        }
+    }
+
+    p {
+        min-height: 120px;
+        margin: 0px;
+        padding-left: 150px;
+        color: #464646;
+        background: transparent url('../img/icon-341.png') left top no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .btn-primary {
+        width: 100%;
+        padding: 12px 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        background-color: #bd0a13;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;   
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .section_landing_our_app {
+        padding: 30px 0px 60px 0px;
+
+        h2 {
+            margin: 0px 0px 30px 0px;
+            font-size: 50px;
+        }
+
+        p {
+            padding-left: 0px;
+            padding-top: 130px;
+            background: transparent url('../img/icon-341.png') center top no-repeat;
+        }
+
+        .mt-5 {
+            margin-top: 15px !important;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+
+    .section_landing_our_app {
+        
+        .btn-primary {
+            margin-top: 30px;
+        }
+    }
+}

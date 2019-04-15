@@ -1,0 +1,23 @@
+.section_landing_user_experience {
+    padding: 120px 0px;
+    background: transparent url('../img/group-335.png') center center / cover no-repeat;
+
+    h2 {
+        margin: 0px 0px 30px 0px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 50px;
+        color: #fff;
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .section_landing_user_experience {
+        padding: 30px 0px 40px 0px;
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+}

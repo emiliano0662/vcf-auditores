@@ -1,0 +1,113 @@
+.section_home_services {
+    background: transparent url('../img/bg-home-services.png') center center / cover no-repeat;
+
+    .bg-content-white {
+        padding: 140px 80px 140px 15px;
+        background: transparent url('../img/bg-home-services-white.png') left top repeat;
+
+        h2 {
+            margin: 0px;
+            text-transform: uppercase;
+            font-size: 60px;
+            color: #bd0a13;
+        }
+    }
+    
+    .bg-content-black {
+        padding: 140px 15px 140px 70px;
+        background: transparent url('../img/bg-home-services-black.png') left top repeat;
+
+        .content-items {
+            width: 100%;
+            max-width: 600px;
+
+            .col-12 {
+                padding: 0px;
+                margin-bottom: 15px;
+
+                a {
+                    text-decoration: none;
+
+                    .img-fluid {
+                        margin: 0px auto;
+                        
+                        &.hover {
+                            display: none;
+                        }
+                    }
+                    
+                    h3 {
+                        margin: 5px 0px 0px 0px;
+                        font-size: 16px;
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        
+                        .img-fluid {
+                            display: none;
+
+                            &.hover {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .btn-primary {
+                    width: 100%;
+                    max-width: 250px;
+                    padding: 18px 30px;
+                    border: 3px solid #fff;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #fff;
+                    background-color: transparent;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    border-radius: 0px;
+
+                    &:hover {
+                        border: 3px solid #bd0a13;
+                        background-color: #bd0a13;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .section_home_services {
+
+        .bg-content-white {
+            padding: 40px 15px 40px 15px;
+            align-items: center !important;
+
+            h2 {
+                font-size: 50px;
+            }
+        }
+        
+        .bg-content-black {
+            padding: 50px 15px 35px 15px;
+
+            .content-items {
+                width: 100%;
+                max-width: 100%;
+
+                .col-12 {
+                    
+                    a {
+
+                        h3 {
+                            margin: 5px 0px 25px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

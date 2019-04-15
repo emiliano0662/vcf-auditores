@@ -1,0 +1,64 @@
+.section_we_quality_politics {
+    padding: 70px 0px 60px 0px;
+    background: transparent url('../img/bg-quality-politics.png') center center / cover no-repeat;
+    
+    .container {
+        max-width: 960px;
+
+        h2 {
+            margin: 0px 0px 50px 0px;
+            font-size: 60px;
+            color: #bd0a13;
+        }
+        
+        p {
+            margin: 0px;
+            font-size: 18px;
+            color: #464646;
+        }
+        
+        .content_item {
+            width: 100%;
+            max-width: 768px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .list_item {
+                
+                h3 {
+                    margin: 5px 0px 0px 0px;
+                    font-size: 16px;
+                    color: #bd0a13;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .section_we_quality_politics {
+        padding: 40px 0px 50px 0px;
+        
+        .container {
+
+            h2 {
+                margin: 0px 0px 40px 0px;
+                font-size: 50px;
+            }
+            
+            .content_item {
+                margin: 50px auto 20px auto;
+                flex-direction: column;
+                justify-content: center;
+
+                .list_item {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

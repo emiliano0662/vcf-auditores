@@ -1,0 +1,49 @@
+.section_internal_banner {
+    padding: 120px 0px 70px 0px;
+    background: transparent url('../img/bg-internal-banner.png') center center / cover no-repeat;
+
+    .img-fluid {
+        width: 100%;
+        max-width: 475px;
+    }
+
+    .content-text {
+        width: 100%;
+        margin-top: 50px;
+        text-align: right;
+
+        p {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 17px;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .img-fluid {
+                width: 35px;
+                height: 3px;
+                margin-left: 5px;
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .section_internal_banner {
+
+        .content-text {
+            margin-top: 40px;
+            text-align: center;
+
+            p {
+                justify-content: center;
+            }
+        }
+    }
+}

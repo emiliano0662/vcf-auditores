@@ -1,0 +1,104 @@
+.section_landing_description {
+    margin-top: -70px;
+    padding: 120px 0px 60px 0px;
+    background-color: transparent;
+    background-image: url('../img/WEB-09.png'), url('../img/bg-landing-description.png');
+    background-position: right center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto, 100% 100%;
+   
+    ul {
+        margin: 0px;
+        list-style: none;
+        padding-left: 0px;
+
+        li {
+            min-height: 110px;
+            margin-bottom: 40px;
+            padding-left: 150px;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: top left;
+    
+            h2 {
+                text-transform: uppercase;
+                line-height: 30px;
+                font-weight: 700;
+                font-size: 20px;
+                color: #fff;
+            }
+    
+            p {
+                margin: 0px;
+                line-height: 21px;
+                font-size: 16px;
+                color: #fff;
+            }
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .btn {
+        width: 180px;
+        padding: 12px 0px;
+        margin-top: 70px;
+        border: 3px solid #fff;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        .fa {
+            margin-right: 15px;
+            font-size: 30px;
+        }
+
+        &.btn-primary {
+            color: #fff;
+            background-color: transparent;
+
+            .fa {
+                color: #fff;
+            }
+        }
+        
+        &.btn-secondary {
+            color: #464646;
+            background-color: #fff;
+
+            .fa {
+                color: #464646;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .section_landing_description {
+        margin-top: -40px;
+        padding: 40px 0px;
+        background: transparent url('../img/bg-landing-description.png') bottom center / auto 120% no-repeat;
+
+        ul {
+
+            li {
+                padding-top: 120px;
+                padding-left: 0px;
+                background-position: top center;
+
+                text-align: center;
+            }
+        }
+
+        .btn {
+            margin-top: 40px;
+        }
+    }
+}

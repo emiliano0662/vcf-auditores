@@ -1,0 +1,16 @@
+{
+  "name": "vcf",
+  "version": "1.0.0",
+  "description": "vcf",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "jquery-background-video": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node_modules/.bin/webpack -w"
+  },
+  "author": "Emiliano Carreño",
+  "license": "ISC"
+}

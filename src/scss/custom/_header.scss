@@ -1,0 +1,108 @@
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 99999;
+
+    .navbar {
+        padding: 0px;
+        border: none;
+        background-color: transparent !important;
+        
+        .bg-header {
+            width: 130%;
+            margin-left: -40%;
+            padding: 12px 0px 12px 40%;
+            background-color: #bd0a13 !important;
+
+            .navbar-toggler {
+                border-color: #fff;
+                background-color: #fff;
+            }
+
+            .navbar-collapse {
+                padding: 10px 0px;
+                
+                .navbar-nav {
+                    
+                    .nav-item {
+                        
+                        .nav-link {
+                            padding: 2px 1.2rem;
+                            font-weight: 500;
+                            font-size: 17px;
+                            color: #fff;
+                            -webkit-transition: none;
+                            transition: none;
+                            
+                            &:hover {
+                                background: transparent url('../img/bg-btn-menu.jpg') 1.3rem bottom / 50px 2px no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-only(lg) {
+
+    header {
+
+        .navbar {
+            
+            .bg-header {
+                margin-left: -30%;
+                padding: 12px 0px 12px 30%;
+
+                .navbar-collapse {
+                    
+                    .navbar-nav {
+                        
+                        .nav-item {
+                            
+                            .nav-link {
+                                padding: 2px 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    header {
+        
+        .navbar {
+            background-color: #bd0a13 !important;
+            
+            .bg-header {
+                width: 100%;
+                margin-left: 0px;
+                padding: 12px 15px;
+
+                .navbar-collapse {
+                    padding: 25px 0px 10px 0px;
+                    
+                    .navbar-nav {
+                        
+                        .nav-item {
+                            
+                            .nav-link {
+                                padding: 2px 0rem;
+                                margin: 5px 0px;
+
+                                &:hover {
+                                    background: transparent url('../img/bg-btn-menu.jpg') 0rem bottom / 50px 2px no-repeat;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

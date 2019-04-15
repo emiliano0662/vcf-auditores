@@ -1,0 +1,50 @@
+.section_landing_feature {
+    padding: 70px 0px 100px 0px;
+    background-color: #fff;
+
+    h2 {
+        margin: 70px 0px 30px 0px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 50px;
+        color: #bd0a13;
+    }
+
+    p {
+        padding: 40px 30px;
+        margin: 0px 0px 40px 0px;
+        line-height: 25px;
+        font-size: 20px;
+        color: #464646;
+        background-color: #C3C3C3;
+    }
+
+    .btn-primary {
+        width: 180px;
+        padding: 12px 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        background-color: #bd0a13;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;            
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .section_landing_feature {
+        padding: 50px 0px;
+
+        h2 {
+            margin: 40px 0px 30px 0px;
+            font-size: 40px;
+        }
+
+        p {
+            padding: 30px 20px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+/*!
+ * Bootstrap v4.1.2 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/utilities";
+@import "bootstrap/print";
+
+@import "font-awesome-4.7.0/font-awesome";
+
+@import "owl-carousel/owlCarousel";
+@import "dinaAnim/dina_anim";
+
+@import "custom/variables";
+@import "custom/header";
+@import "custom/footer";
+@import "custom/section_internal_banner";
+@import "custom/section_landing_description";
+@import "custom/section_landing_description_items";
+@import "custom/section_landing_available";
+@import "custom/section_landing_feature";
+@import "custom/section_landing_user_experience";
+@import "custom/section_landing_available_info";
+@import "custom/section_landing_feature_items";
+@import "custom/section_landing_our_app";
+@import "custom/section_home_banner";
+@import "custom/section_home_welcome";
+@import "custom/section_home_services";
+@import "custom/section_home_calendar";
+@import "custom/section_home_news";
+@import "custom/section_home_our_customers";
+@import "custom/section_home_economic_indicators";
+@import "custom/section_home_comments";
+@import "custom/section_we";
+@import "custom/section_we_quality_politics";
+@import "custom/section_services_menu";
+@import "custom/section_services_main";
+@import "custom/section_services_experience";
+@import "custom/section_contact";
+@import "custom/section_blog";

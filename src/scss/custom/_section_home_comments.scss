@@ -1,0 +1,70 @@
+.section_home_comments {
+    padding: 120px 0px 100px 0px;
+    background-color: #585858;
+    background-image: url('../img/quotes-type-one.png'), url('../img/quotes-type-two.png');
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    
+    .container {
+        max-width: 600px;
+
+        .content-image {
+            width: 72px;
+            height: 72px;
+            margin: 0px 25px 60px 25px;
+            border: 4px solid #bd0a13;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background-color: #585858;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.5;
+            cursor: pointer;
+
+            &.active,
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .content-info {
+            display: none;
+            
+            p {
+                margin: 0px 0px 40px 0px;
+                text-align: center;
+                font-size: 16px;
+                color: #fff;
+            }
+            
+            h3 {
+                margin: 0px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 14px;
+                color: #fff;
+            }
+
+            &.item-0 {
+                display: block;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .section_home_comments {
+        padding: 40px 0px 50px 0px;
+        background-size: 150px auto, 150px auto;
+
+        .container {
+
+            .content-image {
+                margin: 0px 10px 40px 10px;
+            }
+        }
+    }
+}

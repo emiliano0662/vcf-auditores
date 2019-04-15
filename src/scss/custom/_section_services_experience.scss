@@ -1,0 +1,32 @@
+.section_services_experience {
+    padding: 120px 0px;
+    background: transparent url('../img/bg-services-experience.png') center center / cover no-repeat;
+    
+    h2 {
+        margin: 0px 0px 70px 0px;
+        line-height: 80px;
+        font-weight: 700;
+        font-size: 60px;
+        color: #fff;
+    }
+
+    p {
+        margin: 0px;
+        line-height: 45px;
+        font-size: 30px;
+        color: #fff;
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .section_services_experience {
+        padding: 40px 0px;
+
+        h2 {
+            margin: 0px 0px 20px 0px;
+            line-height: 55px;
+            font-size: 45px;
+        }
+    }
+}

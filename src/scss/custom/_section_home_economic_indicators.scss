@@ -1,0 +1,44 @@
+.section_home_economic_indicators {
+    background-color: #fff;
+    
+    h2 {
+        margin: 15px 0px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #bd0a13;
+    }
+
+    ul {
+        margin: 0px;
+        list-style: none;
+        padding-left: 0px;
+
+        li {
+            float: left;
+            margin: 0px 20px 15px 0px;
+            font-weight: 700;
+            font-size: 18px;
+            color: #bd0a13;
+
+            span {
+                font-weight: 400;
+                font-size: 18px;
+                color: #bd0a13;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+
+    .section_home_economic_indicators {
+
+        ul {
+
+            li {
+                width: 100%;
+                margin: 0px 0px 15px 0px;
+            }
+        }
+    }
+}
