@@ -125,7 +125,19 @@
 
                 .screen-reader-response,
                 .wpcf7-response-output {
-                    display: none;   
+                    display: none;
+
+                    &.wpcf7-mail-sent-ok {
+                        padding: .75rem 1.25rem;
+                        text-align: center;
+                        color: #155724;
+                        border: 1px solid #c3e6cb;
+                        background-color: #d4edda;
+                        -webkit-border-radius: .25rem;
+                        -moz-border-radius: .25rem;
+                        border-radius: .25rem;
+                        display: block;
+                    }
                 }
             }
         }

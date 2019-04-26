@@ -34,6 +34,7 @@ header {
                             -webkit-transition: none;
                             transition: none;
                             
+                            &.active,
                             &:hover {
                                 background: transparent url('../img/bg-btn-menu.jpg') 1.3rem bottom / 50px 2px no-repeat;
                             }
