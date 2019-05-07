@@ -69,6 +69,26 @@ $(document).ready(function() {
 
 	});
 
+	$('.owl-carousel-economic-indicators').owlCarousel({
+		items: 6,
+		margin: 20,
+		loop: true,
+		autoplay: true,
+		dots: false,
+		autoWidth: true,
+		responsive: {
+			420: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			960: {
+				items: 3
+			}
+		}
+	});
+
 	$('.section_home_comments').on('click', '.content-image', function (event) {
 		event.preventDefault();
 
