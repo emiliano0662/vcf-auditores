@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	$("#header").load("header.html");
+	/*$("#header").load("header.html");
 	
-	$("#footer").load("footer.html");
+	$("#footer").load("footer.html");*/
 
 	var owl_carousel_home = $('.owl-carousel-home').owlCarousel({
 		margin: 10,
@@ -102,7 +102,7 @@ $(document).ready(function() {
 
 	});
 
-	$(document).on('submit', '#form-contact', function (event) {
+	/*$(document).on('submit', '#form-contact', function (event) {
 		event.preventDefault();
 
 		$('#form-contact .btn-primary').addClass('disabled');
@@ -134,7 +134,7 @@ $(document).ready(function() {
 			}
 		});
 
-	});
+	});*/
 
 	$(document).on('submit', '#form-newsletter', function (event) {
         event.preventDefault();
