@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	/*$("#header").load("header.html");
-	
-	$("#footer").load("footer.html");*/
+	$("#header").load("header.html");
+
+	$("#footer").load("footer.html");
 
 	var owl_carousel_home = $('.owl-carousel-home').owlCarousel({
 		margin: 10,
@@ -109,6 +109,65 @@ $(document).ready(function() {
 		$(".section_home_comments .content-info.item-"+item).fadeIn();
 
 	});
+
+	var objLandingDescription;
+	var count_landing_description = 0;
+
+	function startFunctionLandingDescription() {
+
+		objLandingDescription = setInterval(function(){ 
+			
+			count_landing_description++;
+
+			if (count_landing_description>5) {
+
+				count_landing_description = 1;
+			}
+
+			$(".section_landing_description ul li").each(function() {
+
+			  	var icon = $(this).data("icon");
+
+		    	$(this).css("background-image", "url('"+icon+"')");
+			});
+
+			var icon = $("#item_landing_description_"+count_landing_description).data("icon:hover");
+
+	    	var bg = $('.section_landing_description').data("bg");
+	    	var bg_hover = $("#item_landing_description_"+count_landing_description).data("bg:hover");
+
+	    	$("#item_landing_description_"+count_landing_description).css("background-image", "url('"+icon+"')");
+
+	    	$('.section_landing_description').css("background-image", "url('"+bg_hover+"'), url('"+bg+"')");
+
+		}, 3000);
+	}
+
+	$('.section_landing_description ul li').hover(
+	  	function() {
+
+	  		clearInterval(objLandingDescription);
+
+	    	var icon = $(this).data("icon:hover");
+
+	    	var bg = $('.section_landing_description').data("bg");
+	    	var bg_hover = $(this).data("bg:hover");
+
+	    	$(this).css("background-image", "url('"+icon+"')");
+
+	    	$('.section_landing_description').css("background-image", "url('"+bg_hover+"'), url('"+bg+"')");
+
+	  	}, function() {
+
+	    	var icon = $(this).data("icon");
+
+	    	$(this).css("background-image", "url('"+icon+"')");
+
+	    	startFunctionLandingDescription();
+	  	}
+	);
+
+	startFunctionLandingDescription();
 
 	/*$(document).on('submit', '#form-contact', function (event) {
 		event.preventDefault();
