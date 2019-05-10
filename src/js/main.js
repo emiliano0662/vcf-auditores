@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	/*$("#header").load("header.html");
+	$("#header").load("header.html");
 	
-	$("#footer").load("footer.html");*/
+	$("#footer").load("footer.html");
 
 	var owl_carousel_home = $('.owl-carousel-home').owlCarousel({
 		margin: 10,
@@ -87,6 +87,14 @@ $(document).ready(function() {
 				items: 3
 			}
 		}
+	});
+
+	$('.owl-carousel-landing-feature').owlCarousel({
+		items: 1,
+		margin: 0,
+		loop: true,
+		dots: false,
+		autoplay: true
 	});
 
 	$('.section_home_comments').on('click', '.content-image', function (event) {

@@ -66,6 +66,16 @@
             .fa {
                 color: #fff;
             }
+
+            &:hover {
+                color: #464646;
+                border: 3px solid #fff;
+                background-color: #fff;
+
+                .fa {
+                    color: #464646;
+                }
+            }
         }
         
         &.btn-secondary {
@@ -74,6 +84,16 @@
 
             .fa {
                 color: #464646;
+            }
+
+            &:hover {
+                color: #fff;
+                border: 3px solid #bd0a13;
+                background-color: #bd0a13;
+
+                .fa {
+                    color: #fff;
+                }
             }
         }
     }

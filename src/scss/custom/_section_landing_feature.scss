@@ -31,6 +31,36 @@
         -moz-border-radius: 0px;
         border-radius: 0px;            
     }
+
+    .owl-carousel-landing-feature {
+        width: 100%;
+        max-width: 479px;
+        height: 591px;
+        padding: 67px 17px 0px 205px;
+        background: transparent url('../img/group-334.png') top center / contain no-repeat;
+
+        .item {
+
+            .content-image {
+                width: 256px;
+                height: 451px;
+                background-color: transparent;
+                background-position: top left;
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-only(lg) {
+
+    .section_landing_feature {
+
+        .owl-carousel-landing-feature {
+            padding: 63px 17px 0px 192px;
+        }
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -45,6 +75,27 @@
 
         p {
             padding: 30px 20px;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+
+    .section_landing_feature {
+
+        .owl-carousel-landing-feature {
+            height: auto;
+            padding: 0px;
+            background: transparent;
+
+            .item {
+
+                .content-image {
+                    width: 241px;
+                    height: 425px;
+                    margin: 0px auto;
+                }
+            }
         }
     }
 }

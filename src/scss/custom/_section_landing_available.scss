@@ -50,6 +50,16 @@
                 .fa {
                     color: #fff;
                 }
+
+                &:hover {
+                    color: #464646;
+                    border: 3px solid #fff;
+                    background-color: #fff;
+
+                    .fa {
+                        color: #464646;
+                    }
+                }
             }
             
             &.btn-secondary {
@@ -58,6 +68,61 @@
 
                 .fa {
                     color: #6b6b6b;
+                }
+
+                &:hover {
+                    color: #fff;
+                    border: 3px solid #bd0a13;
+                    background-color: #bd0a13;
+
+                    .fa {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-img-items {
+
+        .content-img {
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            background-color: transparent;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            &.item-1 {
+                z-index: 3;
+            }
+
+            &.item-2 {
+                z-index: 2;
+                -webkit-transition: all 0.4s;
+                transition: all 0.4s;
+            }
+
+            &.item-3 {
+                z-index: 1;
+                -webkit-transition: all 0.8s;
+                transition: all 0.8s;
+            }
+        }
+
+        &:hover {
+
+            .content-img {
+
+                &.item-2 {
+                    left: -45px;
+                }
+
+                &.item-3 {
+                    left: -45px;
                 }
             }
         }
@@ -78,9 +143,13 @@
         }
 
         .content-btn {
-            margin-bottom: 20px;
+            margin-bottom: 0px;
             flex-direction: column;
             justify-content: center;
+        }
+
+        .content-img-items {
+            display: none;
         }
     }
 }
