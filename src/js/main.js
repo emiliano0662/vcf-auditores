@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	$("#header").load("header.html");
+	/*$("#header").load("header.html");
 	
-	$("#footer").load("footer.html");
+	$("#footer").load("footer.html");*/
 
 	var owl_carousel_home = $('.owl-carousel-home').owlCarousel({
 		margin: 10,
