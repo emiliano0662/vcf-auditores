@@ -6,6 +6,8 @@
     background-position: right center, center center;
     background-repeat: no-repeat, no-repeat;
     background-size: auto auto, 100% 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
    
     ul {
         margin: 0px;
@@ -19,6 +21,8 @@
             background-color: transparent;
             background-repeat: no-repeat;
             background-position: top left;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
     
             h2 {
                 text-transform: uppercase;
